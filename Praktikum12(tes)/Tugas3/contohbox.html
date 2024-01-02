@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert New Line in Input</title>
+</head>
+<body>
+
+    <label for="multilineInput">Multiline Input:</label>
+    <input type="text" id="multilineInput" readonly>
+
+    <script>
+        // Get the input element
+        var inputElement = document.getElementById("multilineInput");
+
+        // Set a string with newline characters
+        var multilineText = "Line 1\nLine 2\nLine 3";
+
+        // Replace newline characters with HTML <br> tags
+        var htmlFormattedText = multilineText.replace(/\n/g, "<br>");
+
+        // Set the HTML-formatted text as the input value
+        inputElement.value = htmlFormattedText;
+    </script>
+
+</body>
+</html>

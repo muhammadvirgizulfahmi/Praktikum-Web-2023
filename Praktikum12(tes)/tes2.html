@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+    <script>
+        let siswa1 = {
+            nama : "Budi",
+            Umur : 17,
+            Berat : 60.5,
+            Hobi : ["Membaca", "menulis", "menggambar"],
+            orangtua : {
+                ayah : "bambang",
+                ibu : "siti",
+            },
+            statusBerat : function(){
+                if (this.berat < 50){
+                    return "Kurus";
+                }
+                else if (this.berat > 60 && this.berat < 70){
+                    return "Normal"
+                }
+                else {
+                    return "Gemuk";
+                }
+            }
+        }
+        let siswa2 = {
+            nama : "Susi",
+            Umur : 16,
+            Berat : 50.5,
+            Hobi : ["Fotografi", "menggambar"],
+            orangtua : {
+                ayah : "Akhmad",
+                ibu : "Nurul",
+            },
+            statusBerat : function(){
+                if (this.berat < 50){
+                    return "Kurus";
+                }
+                else if (this.berat > 60 && this.berat < 70){
+                    return "Normal"
+                }
+                else {
+                    return "Gemuk";
+                }
+            }
+        }
+        document.write("<table border=\"1\" width=\"100%\">");
+        document.write("<thead><tr><th>No</th><th>Nama</th><th>Umur</th><th>Berat</th><th>Hobi</th><th>Ayah</th><th>Ibu</th><th>Status Berat</th></tr></thead>");
+        document.write("<tbody>")
+            for (let i = 0; i < ar_siswa.length; i++){}
+        document.write("</tbody>")
+        document.write("</thead>")
+    </script>
+</head>
+<body>
+    
+</body>
